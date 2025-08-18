@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-introduction.html 
+keywords: tr-4863, 4863, tr4863, xcp, best practices, data mover, migration 
+summary: 이 문서에서는 NetApp XCP 모범 사례 지침과 테스트 시나리오 기반 솔루션을 제공합니다.  이러한 모범 사례는 온프레미스 및 클라우드의 마이그레이션 워크플로, 파일 시스템 분석, 문제 해결 및 XCP 성능 조정을 다룹니다. 
+---
+= TR-4863: NetApp XCP - 데이터 무버, 파일 마이그레이션 및 분석을 위한 모범 사례 지침
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+Karthikeyan Nagalingam, NetApp
+
+[role="lead"]
+이 문서에서는 NetApp XCP 모범 사례 지침과 테스트 시나리오 기반 솔루션을 제공합니다.  이러한 모범 사례는 온프레미스 및 클라우드의 마이그레이션 워크플로, 파일 시스템 분석, 문제 해결 및 XCP 성능 조정을 다룹니다.  테스트 시나리오 섹션에서는 고객 사용 사례와 요구 사항, XCP를 사용하는 NetApp 솔루션, 고객에게 제공되는 이점에 대해 다룹니다.

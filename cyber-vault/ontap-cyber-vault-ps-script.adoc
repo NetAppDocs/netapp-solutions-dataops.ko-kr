@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: cyber-vault/ontap-cyber-vault-ps-script.html 
+keywords: Cyber vault, powershell, script, configuration, validation, hardening 
+summary: 이는 ONTAP 기반 사이버 볼트를 구성, 강화 및 검증하기 위한 NetApp ONTAP 솔루션입니다. 
+---
+= 구성, 분석, Cron 스크립트
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 다음을 생성했습니다.link:https://github.com/NetApp/ransomeware-cybervault-automation["다운로드 가능한 단일 스크립트"^] 사이버 볼트 관계를 구성, 검증, 일정을 예약하는 데 사용됩니다.
+
+
+
+== 이 스크립트의 기능
+
+* 클러스터 피어링
+* SVM 피어링
+* DP 볼륨 생성
+* SnapMirror 관계 및 초기화
+* 사이버 볼트에 사용되는 ONTAP 시스템 강화
+* 이전 일정에 따라 관계를 중단하고 재개합니다.
+* 보안 설정을 주기적으로 검증하고 이상 사항을 보여주는 보고서를 생성합니다.
+
+
+
+
+== 이 스크립트를 사용하는 방법
+
+link:https://github.com/NetApp/ransomeware-cybervault-automation["스크립트를 다운로드하세요"^]스크립트를 사용하려면 아래 단계를 따르세요.
+
+* 관리자 권한으로 Windows PowerShell을 실행합니다.
+* 스크립트가 포함된 디렉토리로 이동합니다.
+* 스크립트를 사용하여 실행하세요 `.\` 필수 매개변수와 함께 구문
+
+
+
+NOTE: 모든 정보를 입력했는지 확인하세요.  첫 번째 실행(구성 모드)에서는 프로덕션 시스템과 새로운 사이버 보관소 시스템 모두에 대한 자격 증명을 요청합니다.  그런 다음 시스템 간에 SVM 피어링(존재하지 않는 경우), 볼륨 및 SnapMirror 생성하고 초기화합니다.
+
+
+NOTE: Cron 모드는 데이터 전송의 정지 및 재개를 예약하는 데 사용할 수 있습니다.
+
+
+
+== 작동 모드
+
+자동화 스크립트는 실행을 위한 3가지 모드를 제공합니다. `configure` , `analyze` 그리고 `cron` .
+
+[source, powershell]
+----
+if($SCRIPT_MODE -eq "configure") {
+        configure
+    } elseif ($SCRIPT_MODE -eq "analyze") {
+        analyze
+    } elseif ($SCRIPT_MODE -eq "cron") {
+        runCron
+    }
+----
+* 구성 - 유효성 검사를 수행하고 시스템을 에어갭으로 구성합니다.
+* 분석 - 모니터링 그룹에 이상 및 의심스러운 활동에 대한 정보를 전송하여 구성이 변경되지 않도록 보장하는 자동화된 모니터링 및 보고 기능입니다.
+* Cron - 연결이 끊긴 인프라를 활성화하기 위해 Cron 모드는 LIF를 자동으로 비활성화하고 전송 관계를 중지합니다.
+
+
+선택한 볼륨의 데이터를 전송하는 데는 시스템 성능과 데이터 양에 따라 시간이 걸립니다.
+
+[source, powershell]
+----
+./script.ps1 -SOURCE_ONTAP_CLUSTER_MGMT_IP "172.21.166.157" -SOURCE_ONTAP_CLUSTER_NAME "NTAP915_Src" -SOURCE_VSERVER "svm_NFS" -SOURCE_VOLUME_NAME "Src_RP_Vol01" -DESTINATION_ONTAP_CLUSTER_MGMT_IP "172.21.166.159" -DESTINATION_ONTAP_CLUSTER_NAME "NTAP915_Destn" -DESTINATION_VSERVER "svm_nim_nfs" -DESTINATION_AGGREGATE_NAME "NTAP915_Destn_01_VM_DISK_1" -DESTINATION_VOLUME_NAME "Dst_RP_Vol01_Vault" -DESTINATION_VOLUME_SIZE "5g" -SNAPLOCK_MIN_RETENTION "15minutes" -SNAPLOCK_MAX_RETENTION "30minutes" -SNAPMIRROR_PROTECTION_POLICY "XDPDefault" -SNAPMIRROR_SCHEDULE "5min" -DESTINATION_CLUSTER_USERNAME "admin" -DESTINATION_CLUSTER_PASSWORD "PASSWORD123"
+----

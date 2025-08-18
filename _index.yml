@@ -1,0 +1,30 @@
+---
+indexpage:
+  title: NetApp 데이터 관리 솔루션
+  summary: NetApp 솔루션은 고객의 가장 중요한 비즈니스 요구 사항을 지원하기 위해 NetApp 제품 및 서비스 포트폴리오를 강조하는
+    전략적 및 기술적 역량의 집합입니다.
+  lead: NetApp 솔루션은 고객의 가장 중요한 비즈니스 요구 사항을 지원하기 위해 NetApp 제품 및 서비스 포트폴리오를 강조하는 전략적
+    및 기술적 역량의 집합입니다.
+  tiles:
+  - title: 시작하기
+    links:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+  - title: 데이터 마이그레이션 및 데이터 보호
+    links:
+    - title: 사이버 볼트로 데이터를 보호하세요
+      url: "/cyber-vault/ontap-cyber-vault-overview.html"
+    - title: NetApp XCP로 데이터 마이그레이션
+      url: "/xcp/xcp-bp-introduction.html"
+  - title: 솔루션 자동화
+    links:
+    - title: 소개
+      url: "/automation/automation-introduction.html"
+  - title: 솔루션 요청 및 피드백
+    links:
+    - title: 요청 자동화
+      url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Automation]%0d%0a%0d%0aSolution%20Name:%20%0d%0aRequest%20Title:%20%0d%0aDescription:%0d%0aSuggestions:&title=Request%20Automation%20-%20%3Crequest_title%3E
+    - title: 새로운 솔루션을 제안하다
+      url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Solution]%0d%0a%0d%0aSolution%20Use%20Case:%20%0d%0aSolution%20Description:%20%0d%0aAdditional%20Comments:&title=Request%20Solution%20-%20%3Csolution%3E
+    - title: 솔루션 피드백 제공
+      url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Solution%20Feedback]%0d%0a%0d%0aSolution%20Name:%20%0d%0aSolution%20Feedback:%20%0d%0aAdditional%20Comments:&title=Solution%20Feedback%20-%20%3Csolution%3E

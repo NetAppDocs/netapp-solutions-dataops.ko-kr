@@ -1,0 +1,47 @@
+---
+section: bp-xcp
+title: NetApp XCP를 사용한 데이터 마이그레이션
+pdf-filename: NetApp XCP를 사용한 데이터 마이그레이션
+entries:
+- title: 소개
+  url: "/xcp/xcp-bp-introduction.html"
+- title: NetApp XCP
+  url: "/xcp/xcp-bp-netapp-xcp-overview.html"
+- title: 마이그레이션 워크플로
+  url: "/xcp/xcp-bp-migration-workflow.html"
+- title: 파일 분석
+  url: "/xcp/xcp-bp-file-analytics.html"
+- title: 배포 단계
+  url: "/xcp/xcp-bp-deployment-steps.html"
+- title: 사이즈 가이드라인
+  url: "/xcp/xcp-bp-sizing-guidelines.html"
+- title: 성능 튜닝
+  url: "/xcp/xcp-bp-performance-tuning.html"
+- title: 고객 시나리오
+  entries:
+  - title: 개요
+    url: "/xcp/xcp-bp-scenarios.html"
+  - title: 데이터 레이크에서 ONTAP NFS로
+    url: "/xcp/xcp-bp-data-lake-to-ontap-nfs.html"
+  - title: ONTAP NFS에 대한 고성능 컴퓨팅
+    url: "/xcp/xcp-bp-hpc.html"
+  - title: XCP Data Mover를 사용하여 수백만 개의 작은 파일을 유연한 스토리지로 마이그레이션
+    url: "/xcp/xcp-bp-small-files.html"
+  - title: XCP Data Mover를 사용하여 대용량 파일 마이그레이션
+    url: "/xcp/xcp-bp-large-files.html"
+  - title: 중복 파일
+    url: "/xcp/xcp-bp-duplicate-files.html"
+  - title: 특정 날짜 기반 스캔 및 데이터 복사
+    url: "/xcp/xcp-bp-specific-date.html"
+  - title: SMB/CIFS 공유에서 CSV 파일 만들기
+    url: "/xcp/xcp-bp-smb-cifs-csv.html"
+  - title: 7-Mode에서 ONTAP 으로 데이터 마이그레이션
+    url: "/xcp/xcp-bp-7-mode.html"
+  - title: ACL을 사용한 CIFS 데이터 마이그레이션 소스 스토리지 박스에서 ONTAP 으로
+    url: "/xcp/xcp-bp-cifs-acls.html"
+- title: 모범 사례 지침 및 권장 사항
+  url: "/xcp/xcp-bp-best-practices.html"
+- title: 문제 해결
+  url: "/xcp/xcp-bp-troubleshooting.html"
+- title: 추가 정보를 찾을 수 있는 곳
+  url: "/xcp/xcp-additional-info.html"

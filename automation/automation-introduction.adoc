@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: automation/automation-introduction.html 
+summary: NetApp 솔루션 자동화를 통해 고객은 많은 일반적인 인프라 및 애플리케이션 작업의 배포, 구성 및 실행을 자동화할 수 있습니다. 
+keywords: netapp, solutions, automation, ansible, terraform 
+---
+= NetApp 솔루션 자동화
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 솔루션 자동화를 통해 고객은 많은 일반적인 인프라 및 애플리케이션 작업의 배포, 구성 및 실행을 자동화할 수 있습니다.
+
+
+
+== 소개
+
+오늘날의 비즈니스 과제를 해결하기 위한 솔루션을 제공하면서 NetApp 다음과 같은 목표를 가진 솔루션을 제공합니다.
+
+* 검증된 배포 및 구성 단계 제공
+* 쉽게 소비할 수 있는 솔루션을 제공합니다.
+* 예측 가능한 결과를 제공하고, 쉽게 반복 가능하며, 고객사 전체로 확장 가능한 솔루션 구축을 제공합니다.
+
+
+이러한 목표를 달성하려면 솔루션을 통해 제공되는 인프라 및/또는 애플리케이션의 배포와 구성을 자동화를 통해 간소화하는 것이 가장 중요합니다.  NetApp 자동화를 통해 솔루션 사용을 단순화하는 데 전념하고 있습니다.
+
+Red Hat Ansible, HashiCorp Terraform, Microsoft Powershell과 같은 오픈소스 자동화 도구를 활용하여 NetApp 솔루션은 애플리케이션 배포, 클라우드 프로비저닝, 구성 관리 및 기타 여러 일반적인 IT 작업을 자동화할 수 있습니다.  NetApp 솔루션은 공개적으로 사용 가능한 자동화 아티팩트를 활용하고 NetApp 에서 작성한 자동화를 제공하여 솔루션의 전반적인 배포를 간소화합니다.
+
+자동화 기능을 사용할 수 있는 경우, 솔루션 담보 자료는 사용자에게 특정 자동화 도구를 통해 솔루션이나 솔루션 단계를 자동화하는 프로세스를 안내합니다.

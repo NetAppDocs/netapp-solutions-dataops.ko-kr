@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+keywords: Cyber vault, cybervault, cyber-vault, data protection, security, ransomware, ONTAP, hardening 
+permalink: cyber-vault/ontap-cyber-vault-terminology.html 
+summary: ONTAP 용어를 사용한 사이버 볼트 
+---
+= 사이버 볼트 ONTAP 용어
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이는 사이버 볼트 아키텍처에서 일반적으로 사용되는 용어입니다.
+
+*자율 랜섬웨어 보호(ARP)* - 자율 랜섬웨어 보호(ARP) 기능은 NAS(NFS 및 SMB) 환경에서 작업 부하 분석을 사용하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 실시간으로 감지하고 경고합니다.  공격이 의심되면 ARP는 예약된 스냅샷 복사본의 기존 보호 외에도 새로운 스냅샷 복사본을 생성합니다.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["자율 랜섬웨어 보호에 대한 ONTAP 문서"^]
+
+*에어갭(논리적)* - ONTAP 활용하여 NetApp 스토리지를 논리적 에어갭 사이버 볼트로 구성할 수 있습니다.link:https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html["WORM 보호 스냅샷 복사본에 대한 SnapLock Compliance"^]
+
+*공기 갭(물리적)* - 물리적 공기 갭 시스템에는 네트워크 연결이 없습니다.  테이프 백업을 사용하면 이미지를 다른 위치로 옮길 수 있습니다.  SnapLock Compliance 논리적 공기 간격은 물리적 공기 간격 시스템만큼 견고합니다.
+
+*보스천 호스트* - 공격을 견딜 수 있도록 구성된 격리된 네트워크의 전용 컴퓨터입니다.
+
+*변경 불가능한 스냅샷 복사본* - 예외 없이 수정할 수 없는 스냅샷 복사본(지원 조직이나 저장 시스템을 저수준 포맷하는 기능 포함).
+
+*삭제할 수 없는 스냅샷 사본* - 예외 없이 삭제할 수 없는 스냅샷 사본(지원 조직이나 저장 시스템을 저수준 포맷하는 기능 포함).
+
+*변조 방지 스냅샷 복사본* - 변조 방지 스냅샷 복사본은 SnapLock Compliance 시계 기능을 사용하여 지정된 기간 동안 스냅샷 복사본을 잠급니다.  이러한 잠긴 스냅샷은 어떠한 사용자나 NetApp 지원팀에서도 삭제할 수 없습니다.  랜섬웨어 공격, 맬웨어, 해커, 사기성 관리자 또는 실수로 인한 삭제로 인해 볼륨이 손상된 경우 잠긴 스냅샷 복사본을 사용하여 데이터를 복구할 수 있습니다.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/ontap/snaplock/snapshot-lock-concept.html["변조 방지 스냅샷 복사본에 대한 ONTAP 문서"^]
+
+* SnapLock* - SnapLock 규제 및 거버넌스 목적으로 파일을 수정하지 않은 상태로 보관하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. 자세한 내용은 다음을 참조하십시오. link:https://docs.netapp.com/us-en/ontap/snaplock/["SnapLock 에 대한 ONTAP 문서"^] .
+
+* SnapMirror* - SnapMirror 데이터를 효율적으로 복제하도록 설계된 재해 복구 복제 기술입니다.  SnapMirror 온프레미스 또는 클라우드의 보조 시스템에 미러(또는 데이터의 정확한 사본), 볼트(스냅샷 사본을 장기간 보존하는 데이터 사본) 또는 둘 다를 생성할 수 있습니다.  이러한 사본은 재해, 클라우드로의 데이터 유출, 사이버 보관소(보관소 정책을 사용하고 보관소를 잠그는 경우) 등 다양한 목적으로 사용될 수 있습니다.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/ontap/concepts/snapmirror-disaster-recovery-data-transfer-concept.html["SnapMirror 에 대한 ONTAP 문서"^]
+
+* SnapVault* - ONTAP 9.3에서는 SnapVault 더 이상 사용되지 않으며 대신 Vault 또는 mirror-vault 정책을 사용하여 SnapMirror 구성하게 되었습니다.  이 용어는 여전히 사용되지만 더 이상 쓰이지 않습니다. 자세한 내용은 다음을 참조하십시오. link:https://docs.netapp.com/us-en/ontap/concepts/snapvault-archiving-concept.html["SnapVault 에 대한 ONTAP 문서"^] .

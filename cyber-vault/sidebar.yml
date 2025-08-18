@@ -1,0 +1,39 @@
+---
+section: ontap-cybervault
+title: ONTAP 사이버 볼트를 통한 데이터 보호
+pdf-filename: ONTAP 사이버 볼트
+entries:
+- title: ONTAP 사이버 볼트 개요
+  url: "/cyber-vault/ontap-cyber-vault-overview.html"
+- title: 사이버 볼트 용어
+  url: "/cyber-vault/ontap-cyber-vault-terminology.html"
+- title: ONTAP 을 위한 사이버 볼트 크기 조정
+  url: "/cyber-vault/ontap-cyber-vault-sizing.html"
+- title: 사이버 금고 만들기
+  url: "/cyber-vault/ontap-create-cyber-vault-task.html"
+- title: 사이버 볼트 강화
+  url: "/cyber-vault/ontap-cyber-vault-hardening.html"
+- title: 사이버 볼트 상호 운용성
+  url: "/cyber-vault/ontap-cyber-vault-interop.html"
+- title: 사이버 볼트 자주 묻는 질문
+  url: "/cyber-vault/ontap-cyber-vault-faq.html"
+- title: 사이버 볼트 리소스
+  url: "/cyber-vault/ontap-cyber-vault-resources.html"
+- title: PowerShell을 사용하여 ONTAP 사이버 볼트 생성, 강화 및 검증
+  entries:
+  - title: 개요
+    url: "/cyber-vault/ontap-cyber-vault-ps-overview.html"
+  - title: 사이버 볼트 생성
+    url: "/cyber-vault/ontap-cyber-vault-ps-creation.html"
+  - title: 사이버 볼트 강화
+    url: "/cyber-vault/ontap-cyber-vault-ps-hardening.html"
+  - title: 사이버 볼트 검증
+    url: "/cyber-vault/ontap-cyber-vault-ps-validation.html"
+  - title: 사이버 볼트 데이터 복구
+    url: "/cyber-vault/ontap-cyber-vault-ps-dr.html"
+  - title: 추가 고려 사항
+    url: "/cyber-vault/ontap-cyber-vault-ps-consider.html"
+  - title: 구성, 분석, Cron 스크립트
+    url: "/cyber-vault/ontap-cyber-vault-ps-script.html"
+  - title: 사이버 볼트 결론
+    url: "/cyber-vault/ontap-cyber-vault-ps-conclusion.html"

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: protection-security-resources.html 
+keywords: 'netapp, solutions, data management, what"s new, updates, change log' 
+summary: 데이터 보호 및 보안과 관련된 추가 기술 보고서입니다. 
+---
+= 데이터 보호 및 보안을 위한 추가 리소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+데이터 보호 및 보안과 관련된 기술 보고서에 액세스하려면 아래 링크를 확인하세요.
+
+
+
+== NVA-1143: 다중 테넌트 인프라를 위한 HyTrust를 사용한 FISMA에 대한 NetApp HCI - NIST 보안 제어 - NVA 설계 및 배포
+
+Arvind Ramakrishnan, Abhinav Singh, NetApp
+
+NVA-1143은 NetApp HCI 프라이빗 클라우드 인프라와 멀티테넌트 배포에 필수적인 미국 국립표준기술원(NIST) SP 800-53 개정판 4 보안 및 개인정보 보호 제어를 충족하도록 설계 및 배포되는 방법을 설명합니다.
+
+link:https://www.netapp.com/pdf.html?item=/media/17065-nva1143pdf.pdf["NVA-1143: 다중 테넌트 인프라를 위한 HyTrust를 사용한 FISMA에 대한 NetApp HCI - NIST 보안 제어 - NVA 설계 및 배포"^]
+
+
+
+== TR-4320: NetApp E-Series 및 Commvault Data Platform V11 - 참조 아키텍처 및 스토리지 모범 사례
+
+Akash Gupta, NetApp Girish Chanchlani, Commvault
+
+TR-4320은 Commvault Data Platform V11 환경에서 NetApp E-Series 스토리지를 사용할 때의 참조 아키텍처와 모범 사례를 설명합니다.  Commvault와 NetApp NetApp E-Series 스토리지를 사용하여 Commvault Data Platform V11을 배포할 때 필요한 지침을 제공하기 위해 이 참조 아키텍처를 공동으로 개발했으며, 이를 통해 이 솔루션의 적용 시간을 단축할 수 있습니다.
+
+link:https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["TR-4320: NetApp E-Series 및 Commvault Data Platform V11 - 참조 아키텍처 및 스토리지 모범 사례"^]
+
+
+
+== TR-4471: Veeam Backup & Replication 9.5를 활용한 E-시리즈 및 EF-시리즈 참조 아키텍처와 스토리지 모범 사례
+
+Akash Gupta, NetApp Shawn Lieu(아메리카), Stefan Renner(EMEA), Michael Cade(성능), Veeam
+
+TR-4471은 Veeam Backup & Replication 9.5 환경에서 NetApp E-Series 스토리지를 사용할 때의 참조 아키텍처와 모범 사례를 설명합니다.
+
+link:https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["TR-4471: Veeam Backup  Replication 9.5를 활용한 E-시리즈 및 EF-시리즈 참조 아키텍처와 스토리지 모범 사례"^]
+
+
+
+== TR-4704: NetApp E-Series 스토리지와 함께 Veritas NetBackup 배포
+
+아카쉬 굽타와 프린시플드 테크놀로지스, NetApp
+
+TR-4704에서는 NetApp E-Series 스토리지에 Veritas NetBackup을 배포하는 방법을 설명합니다.
+
+link:https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["TR-4704: NetApp E-Series 스토리지와 함께 Veritas NetBackup 배포"^]

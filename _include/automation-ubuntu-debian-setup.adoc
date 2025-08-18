@@ -1,0 +1,30 @@
+= 
+:allow-uri-read: 
+
+
+. Ansible 제어 노드에 대한 요구 사항:
++
+.. 다음 패키지가 설치된 Ubuntu/Debian 머신:
++
+... Python3
+... Pip3
+... Ansible(2.10.0 이상 버전)
+... 깃
+
+
+
+
+
+
+위의 요구 사항이 설치되지 않은 새 Ubuntu/Debian 머신이 있는 경우 아래 단계에 따라 해당 머신을 Ansible 제어 노드로 설정하세요.
+
+. 아래 내용을 터미널에 붙여넣으세요
++
+[source, cli]
+----
+sudo apt-get -y install python3 >> outputlog.txt
+sudo apt-get -y install python3-pip >> outputlog.txt
+python3 -W ignore -m pip --disable-pip-version-check install ansible >> outputlog.txt
+sudo apt-get -y install git >> outputlog.txt
+----
+

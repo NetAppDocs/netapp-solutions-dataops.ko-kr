@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: cyber-vault/ontap-cyber-vault-ps-conclusion.html 
+keywords: Cyber vault, powershell, script, configuration, validation, hardening 
+summary: 이는 ONTAP 기반 사이버 볼트를 구성, 강화 및 검증하기 위한 NetApp ONTAP 솔루션입니다. 
+---
+= ONTAP 사이버 볼트 PowerShell 솔루션 결론
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 이 제공하는 강력한 강화 방법론을 갖춘 에어 갭을 활용함으로써 NetApp 진화하는 사이버 위협에 탄력적으로 대응할 수 있는 안전하고 격리된 스토리지 환경을 구축할 수 있도록 지원합니다.  이 모든 작업은 기존 스토리지 인프라의 민첩성과 효율성을 유지하면서 수행됩니다.  이러한 보안 액세스를 통해 회사는 기존 인력, 프로세스 및 기술 프레임워크를 최소한으로 변경하면서 엄격한 안전 및 가동 시간 목표를 달성할 수 있습니다.
+
+ONTAP 사이버 볼트는 ONTAP 의 기본 기능을 사용하여 데이터의 변경 불가능하고 지울 수 없는 복사본을 만들어 추가적인 보호를 제공하는 간편한 방법입니다.  전반적인 보안 태세에 NetApp의 ONTAP 기반 사이버 볼트를 추가하면 다음과 같은 이점이 있습니다.
+
+* 운영 및 백업 네트워크와 분리되어 연결이 끊어진 환경을 만들고 해당 환경에 대한 사용자 액세스를 제한합니다.
+

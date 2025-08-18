@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-smb-cifs-csv.html 
+keywords: csv, data dump 
+summary: 이 섹션의 명령은 CSV 형식으로 데이터를 덤프합니다.  크기 열을 합산하면 데이터의 전체 크기를 알 수 있습니다. 
+---
+= SMB/CIFS 공유에서 CSV 파일 만들기
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+다음 명령은 CSV 형식으로 데이터를 덤프합니다.  크기 열을 합산하면 데이터의 전체 크기를 알 수 있습니다.
+
+....
+xcp scan -match "((now-x.atime) / 3600) > 31*day" -fmt "'{}, {}, {}, {}'.format(relpath, name, strftime(x.atime, '%y-%m-%d-%H:%M:%S'), humanize_size(size))" -preserve-atime  >file.csv
+....
+출력은 다음 예와 유사해야 합니다.
+
+....
+erase\report_av_fp_cdot_crosstab.csvreport_av_fp_cdot_crosstab.csv20-01-29-10:26:2449.6MiB
+....
+최대 3개의 하위 디렉토리까지 스캔하고 결과를 정렬 순서로 제공하려면 다음을 실행하세요. `xcp -du` 명령을 실행하고 최대 3개 하위 디렉토리의 깊이까지 각 디렉토리 레벨의 크기를 덤프합니다.
+
+....
+./xcp  scan -du -depth 3 NFS_Server_IP:/source_vol
+ 
+....
+정렬하려면 정보를 CSV 파일로 덤프한 후 정렬합니다.
+
+....
+xcp scan -match "type == d" -depth 3 -fmt "'{}, {}, {}, {}'.format(name, relpath, size)" NFS_Server_IP:/share > directory_report.csv
+....
+이는 다음을 사용하는 사용자 정의 보고서입니다. `-fmt` 명령.  모든 디렉토리를 스캔하여 디렉토리 이름, 경로, 디렉토리 크기를 CSV 파일로 덤프합니다.  스프레드시트 애플리케이션에서 크기 열을 정렬할 수 있습니다.

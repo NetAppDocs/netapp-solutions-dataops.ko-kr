@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-scenarios.html 
+keywords:  
+summary:  
+---
+= 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 섹션에서는 고객 시나리오와 아키텍처를 설명합니다.

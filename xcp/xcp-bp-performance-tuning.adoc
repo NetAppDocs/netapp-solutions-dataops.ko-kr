@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-performance-tuning.html 
+keywords: performance, tuning, operations, windows 
+summary: 이 섹션에서는 XCP 작업의 성능을 개선하는 데 도움이 되는 몇 가지 튜닝 매개변수를 제공합니다. 
+---
+= 성능 튜닝
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 섹션에서는 XCP 작업의 성능을 개선하는 데 도움이 되는 몇 가지 튜닝 매개변수를 제공합니다.
+
+* 더 나은 확장성과 여러 XCP 인스턴스에 걸쳐 작업 부하 분산을 위해 마이그레이션 및 데이터 전송을 위해 각 XCP 인스턴스의 하위 폴더를 분할합니다.
+* XCP는 최대 CPU 리소스를 사용할 수 있습니다. 즉, CPU 코어가 많을수록 성능이 향상됩니다.  따라서 XCP 서버에 더 많은 CPU가 있어야 합니다.  우리는 128GB RAM과 48x 코어 CPU를 사용하여 실험실 테스트를 실시했는데, 이는 8x CPU와 8GB RAM보다 더 나은 성능을 제공했습니다.
+* XCP 복사본 `-parallel` 옵션은 CPU 수에 따라 결정됩니다.  병렬 스레드의 기본 개수(7개)는 대부분의 XCP 데이터 전송 및 마이그레이션 작업에 충분한 경우가 있습니다.  기본적으로 XCP Windows의 경우 병렬 프로세스 수는 CPU 수와 같습니다.  최대 개수 `-parallel` 옵션은 코어 수보다 작거나 같아야 합니다.
+* 10GbE는 데이터 전송에 적합한 시작점입니다.  그러나 더 나은 데이터 전송을 제공하고 대용량 파일 크기의 데이터 전송에 권장되는 25GbE 및 100GbE로 테스트했습니다.
+* Azure NetApp Files 의 경우 성능은 서비스 수준에 따라 달라집니다.  자세한 내용은 Azure NetApp Files 서비스 수준과 성능 세부 정보를 보여주는 다음 표를 참조하세요.
+
+
+|===
+| 서비스 수준 | 기준 | 프리미엄 | 극단론자 
+
+
+| 처리량 | 16MBps/테라바이트(TB) | 64MBps/TB | 128MBps/TB 
+
+
+| 작업 유형 | 일반 용도 파일 공유, 이메일 및 웹 | BM, 데이터베이스 및 애플리케이션 | 지연 시간에 민감한 애플리케이션 
+
+
+| 성능 설명 | 표준 성능: TB당 1,000 IOPS(16K I/O) 및 TB당 16MBps | 프리미엄 성능 – TB당 4,000 IOPS(16k I/O) 및 TB당 64MBps | 극한의 성능: TB당 8,000 IOPS(16k I/O) 및 TB당 128MBps 
+|===
+처리량과 작업 부하 유형에 따라 올바른 서비스 수준을 선택해야 합니다.  대부분 고객은 프리미엄 레벨부터 시작하여 작업 부하에 따라 서비스 레벨을 변경합니다.

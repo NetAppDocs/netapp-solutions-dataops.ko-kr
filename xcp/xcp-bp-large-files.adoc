@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-large-files.html 
+keywords: migrate, large files, rman, ebs, pacemaker 
+summary: '이 사용 사례는 텔레비전 네트워크 고객을 기반으로 합니다.  고객은 Oracle Recovery Manager(RMAN) 백업 파일을 클라우드로 마이그레이션하고 Pacemaker 소프트웨어와 Azure NetApp Files 사용하여 Oracle E-Business Suite(EBS) 애플리케이션을 실행하려고 했습니다.  또한 고객은 데이터베이스 백업 파일을 주문형 클라우드 스토리지로 마이그레이션하고 대용량 파일(각각 25GB~50GB 범위)을 Azure로 전송하려고 했습니다.' 
+---
+= XCP Data Mover를 사용하여 대용량 파일 마이그레이션
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 사용 사례는 텔레비전 네트워크 고객을 기반으로 합니다.  고객은 Oracle Recovery Manager(RMAN) 백업 파일을 클라우드로 마이그레이션하고 Pacemaker 소프트웨어와 Azure NetApp Files 사용하여 Oracle E-Business Suite(EBS) 애플리케이션을 실행하려고 했습니다.  또한 고객은 데이터베이스 백업 파일을 주문형 클라우드 스토리지로 마이그레이션하고 대용량 파일(각각 25GB~50GB 범위)을 Azure로 전송하려고 했습니다.
+
+다음 그림은 대용량 파일의 온프레미스에서 Azure NetApp Files 로의 데이터 마이그레이션을 보여줍니다.
+
+자세한 내용은 다음을 참조하세요. https://blog.netapp.com/XCP-cloud-data-migration["NetApp XCP 데이터 무버 솔루션: 온프레미스에서 클라우드로"^] 블로그.

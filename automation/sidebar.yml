@@ -1,0 +1,14 @@
+---
+section: automation
+title: 솔루션 자동화
+entries:
+- title: 소개
+  url: "/automation/automation-introduction.html"
+- title: 자동화 환경 설정
+  url: "/automation/getting-started.html"
+- title: CVO 및 커넥터 배포를 위한 사전 요구 사항 수집
+  url: "/automation/authentication-tokens.html"
+- title: Terraform을 사용한 Cloud Volumes 자동화
+  url: "/automation/cloud-volumes-terraform.html"
+- title: AWS Lambda 함수를 사용한 Amazon FSx for NetApp ONTAP 모니터링 및 자동 크기 조정
+  url: "/automation/fsxn-monitoring-resizing.html"
