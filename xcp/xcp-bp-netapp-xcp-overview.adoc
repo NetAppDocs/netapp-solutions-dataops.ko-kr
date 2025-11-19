@@ -88,7 +88,7 @@ rpcinfo -p < NAS IP or on-prem nfs data LIF ip >
 .. 라이센스를 다운로드하여 준비하세요.
 
 
-. XCP 카탈로그의 클라우드에서 Azure NetApp 볼륨 또는 Cloud Volume Service(프리미엄 서비스 수준)마다 온프레미스에서 하나의 NFS 공유를 만듭니다.
+. XCP 카탈로그의 클라우드에서 각 Azure NetApp 볼륨 또는 Google Cloud NetApp Volumes (프리미엄 서비스 수준)에 대해 온프레미스에서 하나의 NFS 공유를 만듭니다.
 . NAS 볼륨을 생성하고 데이터 대상에 대한 공유를 구성합니다.
 . 여러 XCP 인스턴스의 경우 여러 소스 폴더나 파일의 데이터를 대상 위치로 전송하려면 하나 이상의 서버나 클라우드 인스턴스가 필요합니다.
 . maxdir 크기(기본값은 308MB)는 단일 폴더의 최대 파일 수(약 100만 개)를 정의합니다.  파일 수를 늘리려면 maxdir 크기 값을 늘리세요.  값을 높이면 CPU 사이클이 추가로 증가합니다.
